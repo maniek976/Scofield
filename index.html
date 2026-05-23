@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scofield14cm — streamer CS, Twitch, TikTok, YouTube. Dołącz do społeczności i obserwuj wszystkie profile.">
+  <meta name="keywords" content="Scofield14cm, streamer, CS2, Twitch, TikTok, YouTube, Discord">
+  <meta name="author" content="Scofield14cm">
+  <meta name="theme-color" content="#0a0b0f">
+  <meta property="og:title" content="Scofield14cm — Creator Hub">
+  <meta property="og:description" content="Młoda legenda TTV. CS, streamy i społeczność — wszystkie linki w jednym miejscu.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Scofield14cm — Creator Hub">
+  <meta name="twitter:description" content="Wszystkie profile i linki twórcy w jednym miejscu.">
+  <title>Scofield14cm — Creator Hub</title>
+  <link rel="icon" href="avatar.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="avatar.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="bg-music" src="muzyczka.mp3" loop preload="auto" autoplay playsinline></audio>
+  <script>
+    (function () {
+      var a = document.getElementById("bg-music");
+      if (!a) return;
+      a.muted = false;
+      a.volume = 0.35;
+      function go() { a.play().catch(function () {}); }
+      go();
+      a.addEventListener("canplay", go, { once: true });
+    })();
+  </script>
+
+  <div id="cursor-glow" class="cursor-glow" aria-hidden="true"></div>
+
+  <div id="enter-gate" class="enter-gate" hidden>
+    <div class="enter-gate-card">
+      <p class="enter-gate-brand">Scofield_14cm</p>
+      <button type="button" class="btn btn--primary enter-gate-btn" id="enter-btn">Wejdź</button>
+    </div>
+  </div>
+
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="site-header">
+    <a href="#hero" class="logo" aria-label="Strona główna">
+      <img src="avatar.jpg" alt="" class="logo-avatar" width="36" height="36">
+      <span class="logo-text">Scofield<span class="logo-accent">_14cm</span></span>
+    </a>
+    <nav class="nav" aria-label="Nawigacja">
+      <a href="#social" class="nav-link">Linki</a>
+      <a href="#social" class="nav-cta">Wszystkie profile</a>
+    </nav>
+    <button type="button" class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobilne" hidden>
+    <a href="#hero" class="mobile-nav-link">Start</a>
+    <a href="#social" class="mobile-nav-link">Linki</a>
+    <a href="#social" class="mobile-nav-cta">Wszystkie profile</a>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero section">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-dot"></span>
+        Streamer · CS · Creator
+      </div>
+      <div class="hero-head reveal">
+        <div class="hero-avatar-wrap">
+          <img src="avatar.jpg" alt="Scofield_14cm" class="hero-avatar" width="140" height="140">
+        </div>
+        <h1 class="hero-title">Scofield_14cm</h1>
+      </div>
+      <p class="hero-desc reveal">
+        Młoda legenda TTV — gram w CSa (głównie), choć grać trzeba umieć. Walczę, raczej jestem z tych normalnych w przeciwieństwie do ludzi, z którymi gram :/ Cho pogadamy o życiu, CS-ie albo o jakimś sporcie.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="https://www.twitch.tv/scofield_14cm" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h16v12.5l-4 4H4V3zm2 2v10.5h9.5L18 14.5V5H6zm4 2h2v5h-2V7zm4 0h2v5h-2V7z"/></svg>
+          Obserwuj na Twitch
+        </a>
+        <a href="#social" class="btn btn--glass">
+          Wszystkie linki
+          <svg class="btn-icon btn-icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-value">7+</span>
+          <span class="stat-label">Platform</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">CS</span>
+          <span class="stat-label">Główna gra</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">TTV</span>
+          <span class="stat-label">Live</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="social" class="social section">
+      <div class="section-head reveal">
+        <span class="section-tag">Social Hub</span>
+        <h2 class="section-title">Wszystkie profile</h2>
+        <p class="section-desc">Kliknij kafelek, aby przejść na wybraną platformę.</p>
+      </div>
+      <div class="social-grid" id="social-grid" role="list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> <strong>Scofield14cm</strong>. Creator Hub.
+      </p>
+      <button type="button" class="back-to-top" id="back-to-top" aria-label="Powrót na górę">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <span>Góra</span>
+      </button>
+    </div>
+    <p class="footer-credit">website made by Tawerniaq &amp; maniek976</p>
+  </footer>
+
+  <button type="button" class="music-toggle" id="music-toggle" aria-label="Wycisz muzykę" title="Wycisz muzykę">
+    <svg class="music-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
