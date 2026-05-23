@@ -8,8 +8,7 @@
       url: "https://www.twitch.tv/scofield_14cm",
       desc: "Live streamy, CS i rozmowy na czacie.",
       accent: "#9146ff",
-      icon: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2h16v14l-4 4H4V2zm2 2v12h8.5l3.5-3.5V4H6zm3 2h2v6H9V6zm4 0h2v6h-2V6z"/></svg>`,
-    },
+      icon: `<svg class="icon-twitch" viewBox="0 0 24 24" fill="#9146ff" aria-hidden="true"><path d="M4 2h18v12l-4 4h-4l-2 2h-2v-2H6l-2-2V2zm2 2v10h3v2h2l2-2h3l3-3V4H6zm5 3h2v5h-2V7zm4 0h2v5h-2V7z"/></svg>`,    },
     {
       id: "youtube",
       name: "YouTube",
@@ -41,9 +40,8 @@
       desc: "Stories, zdjęcia i życie poza streamem.",
       accent: "#e4405f",
       icon: `<svg class="icon-instagram" viewBox="0 0 24 24" fill="#af354e" aria-hidden="true">
-<path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
-</svg>`,
-    },
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+      </svg>`,    },
     {
       id: "steam",
       name: "Steam",
